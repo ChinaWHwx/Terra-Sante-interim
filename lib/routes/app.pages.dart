@@ -15,6 +15,7 @@ import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.vie
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Recommend/recommend.view.dart';
+import 'package:flutter_application_1/modules/app/homepage/Drawer/Settings/setting.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Duty/duty.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/document/document.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/experience/experience.view.dart';
@@ -101,5 +102,6 @@ class AppPages {
     GetPage(name: Routes.duty, page: () => const DutyView()),
     GetPage(
         name: Routes.googlePlaceApi, page: () => const GooglePlaceApiView()),
+    GetPage(name: Routes.setting, page: () => const SettingView()),
   ];
 }

@@ -71,6 +71,7 @@ dependencies:
   geolocator: ^8.2.1
   geocoding: ^2.0.4
   flutter_typeahead: ^4.0.0
+  settings_ui: ^2.0.2
   
 
 dev_dependencies:

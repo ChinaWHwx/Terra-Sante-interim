@@ -17,6 +17,7 @@ import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.con
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Recommend/recommend.controller.dart';
+import 'package:flutter_application_1/modules/app/homepage/Drawer/Settings/setting.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Duty/duty.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/ability/ability.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/document/document.controller.dart';
@@ -58,5 +59,6 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => RecommendController(), fenix: true);
     Get.lazyPut(() => DutyController(), fenix: true);
     Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
+    Get.lazyPut(() => SettingController(), fenix: true);
   }
 }
