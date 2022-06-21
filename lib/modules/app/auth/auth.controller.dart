@@ -24,7 +24,7 @@ class AuthController extends GetxController {
   }
 
   navigateTest() {
-    Get.toNamed(Routes.settingRoute);
+    Get.toNamed(Routes.documentRoute);
   }
 
   navigateToHomePage() {
