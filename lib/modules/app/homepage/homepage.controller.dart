@@ -8,7 +8,7 @@ class HomepageController extends GetxController {
         Get.toNamed(Routes.welcome);
         break;
       case 1:
-        Get.toNamed(Routes.auth);
+        Get.toNamed(Routes.search);
         break;
       case 2:
         Get.toNamed(Routes.calendar);
