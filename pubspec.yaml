@@ -75,6 +75,7 @@ dependencies:
   dotted_border: ^2.0.0+2
   iconsax: ^0.0.7
   file_picker: ^4.6.1
+  simple_animations: ^4.1.0
   
 
 dev_dependencies:

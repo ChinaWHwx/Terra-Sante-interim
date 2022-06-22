@@ -34,6 +34,7 @@ class Routes {
   static const duty = '/duty';
   static const googlePlaceApi = '/googlePlaceApi';
   static const setting = '/setting';
+  static const search = '/search';
 
   static const candidateRoute = auth + candidate;
   static const recruiterRoute = auth + recruiter;
@@ -68,4 +69,5 @@ class Routes {
   static const dutyRoute = duty;
   static const googleplaceapiRoute = googlePlaceApi;
   static const settingRoute = setting;
+  static const searchRoute = search;
 }

@@ -23,6 +23,7 @@ import 'package:flutter_application_1/modules/app/homepage/My/logout/logout.view
 import 'package:flutter_application_1/modules/app/homepage/My/my.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/ability/ability.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.view.dart';
+import 'package:flutter_application_1/modules/app/homepage/Search/search.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.view.dart';
 import 'package:get/get.dart';
@@ -103,5 +104,6 @@ class AppPages {
     GetPage(
         name: Routes.googlePlaceApi, page: () => const GooglePlaceApiView()),
     GetPage(name: Routes.setting, page: () => const SettingView()),
+    GetPage(name: Routes.search, page: () => const SearchView()),
   ];
 }

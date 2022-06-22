@@ -24,6 +24,7 @@ import 'package:flutter_application_1/modules/app/homepage/My/document/document.
 import 'package:flutter_application_1/modules/app/homepage/My/experience/experience.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/my.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.controller.dart';
+import 'package:flutter_application_1/modules/app/homepage/Search/search.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.controller.dart';
 import 'package:get/get.dart';
@@ -60,5 +61,6 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => DutyController(), fenix: true);
     Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
     Get.lazyPut(() => SettingController(), fenix: true);
+    Get.lazyPut(() => SearchController(), fenix: true);
   }
 }

@@ -25,7 +25,7 @@ class DocumentView extends GetView<DocumentController> {
               height: 50,
             ),
             Text(
-              'Upload your file',
+              'Déposer votre ficher',
               style: TextStyle(
                   fontSize: 25,
                   color: Colors.grey.shade800,
@@ -35,7 +35,7 @@ class DocumentView extends GetView<DocumentController> {
               height: 10,
             ),
             Text(
-              'File should be jpg, png',
+              'en jpg, png, jpeg ou pdf',
               style: TextStyle(fontSize: 15, color: Colors.grey.shade500),
             ),
             const SizedBox(
@@ -70,7 +70,7 @@ class DocumentView extends GetView<DocumentController> {
                             height: 15,
                           ),
                           Text(
-                            'Select your file',
+                            'Choisir votre file pour vérifier',
                             style: TextStyle(
                                 fontSize: 15, color: Colors.grey.shade400),
                           ),
