@@ -11,6 +11,9 @@ import 'package:flutter_application_1/modules/app/auth/SignUp/Telephone/telephon
 import 'package:flutter_application_1/modules/app/auth/Splash/splash.view.dart';
 import 'package:flutter_application_1/modules/app/auth/auth.view.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Recruiter/recruiter.view.dart';
+import 'package:flutter_application_1/modules/app/error/Network/network_error.view.dart';
+import 'package:flutter_application_1/modules/app/error/NothingFound/nothing_found.view.dart';
+import 'package:flutter_application_1/modules/app/error/SignIn/signin_error.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.view.dart';
@@ -105,5 +108,8 @@ class AppPages {
         name: Routes.googlePlaceApi, page: () => const GooglePlaceApiView()),
     GetPage(name: Routes.setting, page: () => const SettingView()),
     GetPage(name: Routes.search, page: () => const SearchView()),
+    GetPage(name: Routes.nothingFound, page: () => const NothingFindView()),
+    GetPage(name: Routes.signInError, page: () => const SignInErrorView()),
+    GetPage(name: Routes.networkError, page: () => const NetWorkErrorView()),
   ];
 }

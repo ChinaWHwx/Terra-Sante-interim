@@ -11,6 +11,8 @@ import 'package:flutter_application_1/modules/app/auth/Splash/splach.controller.
 import 'package:flutter_application_1/modules/app/auth/auth.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Candidate/candidate.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Recruiter/recruiter.controller.dart';
+import 'package:flutter_application_1/modules/app/error/Network/network_error.controller.dart';
+import 'package:flutter_application_1/modules/app/error/NothingFound/nothing_found.controller.dart';
 import 'package:flutter_application_1/modules/app/error/SignIn/signin_error.controller.dart';
 import 'package:flutter_application_1/modules/app/error/SmsVerification/sms_error.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.controller.dart';
@@ -62,5 +64,7 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
     Get.lazyPut(() => SettingController(), fenix: true);
     Get.lazyPut(() => SearchController(), fenix: true);
+    Get.lazyPut(() => NothingFoundController(), fenix: true);
+    Get.lazyPut(() => NetWorkErrorController(), fenix: true);
   }
 }
