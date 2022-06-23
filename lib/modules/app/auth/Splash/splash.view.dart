@@ -11,6 +11,9 @@ class SplashView extends GetView<SplashController> {
       body: SafeArea(
         child: Column(
           children: <Widget>[
+            const SizedBox(
+              height: 500,
+            ),
             const Text('Bienvenue à Terra santé'),
             Center(
               child: Image.asset('assets/images/logo.png'),

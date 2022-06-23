@@ -37,6 +37,12 @@ class AppPages {
   AppPages._();
 
   static final routes = [
+    GetPage(name: Routes.splash, page: () => const SplashView(), children: [
+      GetPage(
+        name: Routes.auth,
+        page: () => const AuthView(),
+      )
+    ]),
     GetPage(
       name: Routes.auth,
       page: () => const AuthView(),
