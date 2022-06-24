@@ -15,6 +15,9 @@ import 'package:flutter_application_1/modules/app/error/Network/network_error.co
 import 'package:flutter_application_1/modules/app/error/NothingFound/nothing_found.controller.dart';
 import 'package:flutter_application_1/modules/app/error/SignIn/signin_error.controller.dart';
 import 'package:flutter_application_1/modules/app/error/SmsVerification/sms_error.controller.dart';
+import 'package:flutter_application_1/modules/app/error/access/Camera/camera_access.controller.dart';
+import 'package:flutter_application_1/modules/app/error/access/File/file_access.controller.dart';
+import 'package:flutter_application_1/modules/app/error/access/GPS/gps_access.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.controller.dart';
@@ -66,5 +69,8 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => SearchController(), fenix: true);
     Get.lazyPut(() => NothingFoundController(), fenix: true);
     Get.lazyPut(() => NetWorkErrorController(), fenix: true);
+    Get.lazyPut(() => GpsAccessController(), fenix: true);
+    Get.lazyPut(() => CameraAccessController(), fenix: true);
+    Get.lazyPut(() => FileAccessController(), fenix: true);
   }
 }

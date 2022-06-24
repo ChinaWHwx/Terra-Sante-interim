@@ -38,6 +38,9 @@ class Routes {
   static const nothingFound = '/nothingFound';
   static const signInError = '/signInError';
   static const networkError = '/networkError';
+  static const gpsAccess = '/gpsAccess';
+  static const cameraAccess = '/cameraAccess';
+  static const fileAccess = '/fileAccess';
 
   static const candidateRoute = auth + candidate;
   static const recruiterRoute = auth + recruiter;
@@ -76,4 +79,7 @@ class Routes {
   static const nothingFoundRoute = nothingFound;
   static const signInErrorRoute = signInError;
   static const networkErrorRoute = networkError;
+  static const gpsAccessRoute = gpsAccess;
+  static const cameraAccessRoute = cameraAccess;
+  static const fileAccessRoute = fileAccess;
 }

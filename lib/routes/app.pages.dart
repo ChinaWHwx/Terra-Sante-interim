@@ -14,6 +14,9 @@ import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Recruiter/r
 import 'package:flutter_application_1/modules/app/error/Network/network_error.view.dart';
 import 'package:flutter_application_1/modules/app/error/NothingFound/nothing_found.view.dart';
 import 'package:flutter_application_1/modules/app/error/SignIn/signin_error.view.dart';
+import 'package:flutter_application_1/modules/app/error/access/Camera/camera_access.view.dart';
+import 'package:flutter_application_1/modules/app/error/access/File/file_access.view.dart';
+import 'package:flutter_application_1/modules/app/error/access/GPS/gps_access.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.view.dart';
@@ -117,5 +120,8 @@ class AppPages {
     GetPage(name: Routes.nothingFound, page: () => const NothingFindView()),
     GetPage(name: Routes.signInError, page: () => const SignInErrorView()),
     GetPage(name: Routes.networkError, page: () => const NetWorkErrorView()),
+    GetPage(name: Routes.gpsAccess, page: () => const GpsAccessView()),
+    GetPage(name: Routes.cameraAccess, page: () => const CameraAccessView()),
+    GetPage(name: Routes.fileAccess, page: () => const FileAccessView()),
   ];
 }
