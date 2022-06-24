@@ -41,6 +41,7 @@ class Routes {
   static const gpsAccess = '/gpsAccess';
   static const cameraAccess = '/cameraAccess';
   static const fileAccess = '/fileAccess';
+  static const signInTimeOut = '/signInTimeOut';
 
   static const candidateRoute = auth + candidate;
   static const recruiterRoute = auth + recruiter;
@@ -82,4 +83,5 @@ class Routes {
   static const gpsAccessRoute = gpsAccess;
   static const cameraAccessRoute = cameraAccess;
   static const fileAccessRoute = fileAccess;
+  static const sigiInTimeOutRoute = signInTimeOut;
 }

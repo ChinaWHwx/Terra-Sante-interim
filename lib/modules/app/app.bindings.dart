@@ -32,6 +32,7 @@ import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.co
 import 'package:flutter_application_1/modules/app/homepage/Search/search.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.controller.dart';
+import 'package:flutter_application_1/modules/app/timeout/SignIn/signin_timeout.controller.dart';
 import 'package:get/get.dart';
 
 class AppBindings extends Bindings {
@@ -72,5 +73,6 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => GpsAccessController(), fenix: true);
     Get.lazyPut(() => CameraAccessController(), fenix: true);
     Get.lazyPut(() => FileAccessController(), fenix: true);
+    Get.lazyPut(() => SignInTimeOutController(), fenix: true);
   }
 }

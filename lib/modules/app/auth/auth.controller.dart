@@ -24,7 +24,7 @@ class AuthController extends GetxController {
   }
 
   navigateTest() {
-    Get.toNamed(Routes.fileAccessRoute);
+    Get.toNamed(Routes.sigiInTimeOutRoute);
   }
 
   navigateToHomePage() {

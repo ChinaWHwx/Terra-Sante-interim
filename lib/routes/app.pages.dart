@@ -32,6 +32,7 @@ import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.vi
 import 'package:flutter_application_1/modules/app/homepage/Search/search.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.view.dart';
+import 'package:flutter_application_1/modules/app/timeout/SignIn/signin_timeout.view.dart';
 import 'package:get/get.dart';
 
 part 'app.routes.dart';
@@ -123,5 +124,6 @@ class AppPages {
     GetPage(name: Routes.gpsAccess, page: () => const GpsAccessView()),
     GetPage(name: Routes.cameraAccess, page: () => const CameraAccessView()),
     GetPage(name: Routes.fileAccess, page: () => const FileAccessView()),
+    GetPage(name: Routes.signInTimeOut, page: () => const SigiInTimeOutView()),
   ];
 }
