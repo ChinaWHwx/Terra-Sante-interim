@@ -16,35 +16,38 @@ class SignInView extends GetView<SignInController> {
     return Scaffold(
         body: SafeArea(
       child: SingleChildScrollView(
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              SizedBox(height: size.height * 0.15),
-              SvgPicture.asset(
-                "assets/icons/login.svg",
-                height: size.height * 0.28465,
-              ),
-              RoundedInputField(
-                hintText: "votre mail",
-                onChanged: (value) {},
-              ),
-              RoundedPasswordField(
-                isVisible: controller.isVisible,
-                toggleVisibility: () => controller.toggleIsVisible(),
-                onChanged: (value) {},
-              ),
-              RoundedButton(
-                  text: controller.login,
-                  onTap: () => controller.navigateToAuth()),
-              TextButton(
-                  onPressed: () => controller.navigateToForgetPassword(),
-                  child: Text(controller.check,
-                      style: const TextStyle(
-                        fontWeight: FontWeight.normal,
-                        fontSize: 16.0,
-                        color: Colors.black,
-                      )))
-            ],
+        child: controller.obx(
+          (state) => Center(
+            child: Column(
+              children: <Widget>[
+                SizedBox(height: size.height * 0.15),
+                SvgPicture.asset(
+                  "assets/icons/login.svg",
+                  height: size.height * 0.28465,
+                ),
+                RoundedInputField(
+                  textEditingController: controller.emailEditingController,
+                  hintText: "votre mail",
+                  onChanged: (value) {},
+                ),
+                RoundedPasswordField(
+                  textEditingController: controller.passwordEditingController,
+                  isVisible: controller.isVisible,
+                  toggleVisibility: () => controller.toggleIsVisible(),
+                  onChanged: (value) {},
+                ),
+                RoundedButton(
+                    text: "Se connecter", onTap: () => controller.loginUser()),
+                TextButton(
+                    onPressed: () => controller.navigateToForgetPassword(),
+                    child: const Text('Mot de passe oublié',
+                        style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 16.0,
+                          color: Colors.black,
+                        )))
+              ],
+            ),
           ),
         ),
       ),

@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:geocoding/geocoding.dart';
 import 'package:get/get.dart';
 import 'package:uuid/uuid.dart';
 import 'package:http/http.dart' as http;
@@ -14,6 +15,7 @@ class GooglePlaceApiController extends GetxController
   var uuid = Uuid();
   String? sessionToken;
   List<dynamic> placesList = [];
+  List<Location> locations = [];
 
   @override
   void onInit() {
@@ -48,5 +50,9 @@ class GooglePlaceApiController extends GetxController
     } else {
       change(null, status: RxStatus.error('Failed to load data'));
     }
+  }
+
+  getLocation(adr, index) async {
+    locations = await locationFromAddress(adr);
   }
 }

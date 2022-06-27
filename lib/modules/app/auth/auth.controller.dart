@@ -24,7 +24,7 @@ class AuthController extends GetxController {
   }
 
   navigateTest() {
-    Get.toNamed(Routes.sigiInTimeOutRoute);
+    Get.toNamed(Routes.googleplaceapiRoute);
   }
 
   navigateToHomePage() {
