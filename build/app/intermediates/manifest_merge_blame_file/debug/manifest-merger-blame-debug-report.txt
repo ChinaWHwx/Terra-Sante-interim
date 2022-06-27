@@ -1,0 +1,254 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.flutter_application_1"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="20"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\debug\AndroidManifest.xml:6:22-64
+15
+16    <queries>
+16-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:3:5-24:15
+17
+18        <!-- If your app opens https URLs -->
+19        <intent>
+19-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:5:13-8:22
+20            <action android:name="android.intent.action.VIEW" />
+20-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:6:15-67
+20-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:6:23-64
+21
+22            <data android:scheme="https" />
+22-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:15-46
+22-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:21-43
+23        </intent>
+24        <!-- If your app makes calls -->
+25        <intent>
+25-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:10:13-13:22
+26            <action android:name="android.intent.action.DIAL" />
+26-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:11:15-67
+26-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:11:23-64
+27
+28            <data android:scheme="tel" />
+28-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:15-46
+28-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:21-43
+29        </intent>
+30        <!-- If your sends SMS messages -->
+31        <intent>
+31-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:15:13-18:22
+32            <action android:name="android.intent.action.SENDTO" />
+32-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:16:15-69
+32-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:16:23-66
+33
+34            <data android:scheme="smsto" />
+34-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:15-46
+34-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:21-43
+35        </intent>
+36        <!-- If your app sends emails -->
+37        <intent>
+37-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:20:13-23:22
+38            <action android:name="android.intent.action.SEND" />
+38-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:21:15-67
+38-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:21:23-64
+39
+40            <data android:mimeType="*/*" />
+40-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:15-46
+41        </intent>
+42        <intent>
+42-->[:file_picker] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:18
+43            <action android:name="android.intent.action.GET_CONTENT" />
+43-->[:file_picker] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-72
+43-->[:file_picker] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\file_picker\intermediates\library_manifest\debug\AndroidManifest.xml:11:21-69
+44
+45            <data android:mimeType="*/*" />
+45-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:7:15-46
+46        </intent> <!-- Needs to be explicitly declared on Android R+ -->
+47        <package android:name="com.google.android.apps.maps" />
+47-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:9-64
+47-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:33:18-61
+48    </queries>
+49
+50    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+50-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:63:5-80
+50-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:63:22-77
+51    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+51-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:64:5-81
+51-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:64:22-78
+52    <uses-permission android:name="android.permission.CAMERA" />
+52-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:65:5-65
+52-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:65:22-62
+53    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+53-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:66:5-71
+53-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:66:22-68
+54    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+54-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:67:5-77
+54-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:67:22-74
+55    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+55-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:68:5-84
+55-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:68:22-82
+56    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+56-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:69:5-79
+56-->D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\android\app\src\main\AndroidManifest.xml:69:22-76
+57    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+57-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+57-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-78
+58    <uses-permission android:name="android.permission.CALL_PHONE" />
+58-->[:flutter_phone_direct_caller] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-69
+58-->[:flutter_phone_direct_caller] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-66
+59
+60    <uses-feature
+60-->[:flutter_phone_direct_caller] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-13:36
+61        android:name="android.hardware.telephony"
+61-->[:flutter_phone_direct_caller] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-50
+62        android:required="false" /> <!-- Include required permissions for Google Maps API to run. -->
+62-->[:flutter_phone_direct_caller] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\flutter_phone_direct_caller\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-33
+63    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+63-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:5-79
+63-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:23:22-76
+64
+65    <uses-feature
+65-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:26:5-28:35
+66        android:glEsVersion="0x00020000"
+66-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:27:9-41
+67        android:required="true" />
+67-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:28:9-32
+68
+69    <application
+70        android:name="android.app.Application"
+71        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+71-->[androidx.core:core:1.8.0] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\6a63f4cc4103cbb4519655dea90e7893\core-1.8.0\AndroidManifest.xml:24:18-86
+72        android:debuggable="true"
+73        android:icon="@mipmap/ic_launcher"
+74        android:label="flutter_application_1"
+75        android:requestLegacyExternalStorage="true" >
+76        <meta-data
+77            android:name="com.google.android.geo.API_KEY"
+78            android:value="AIzaSyD4U3Q0x6MR0ad-UXTwp6XVvaBsmlHkOhc" />
+79
+80        <activity
+81            android:name="com.example.flutter_application_1.MainActivity"
+82            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+83            android:exported="true"
+84            android:hardwareAccelerated="true"
+85            android:launchMode="singleTop"
+86            android:requestLegacyExternalStorage="true"
+87            android:theme="@style/LaunchTheme"
+88            android:windowSoftInputMode="adjustResize" >
+89
+90            <!--
+91                 Specifies an Android theme to apply to this Activity as soon as
+92                 the Android process has started. This theme is visible to the user
+93                 while the Flutter UI initializes. After that, this theme continues
+94                 to determine the Window background behind the Flutter UI.
+95            -->
+96            <meta-data
+97                android:name="io.flutter.embedding.android.NormalTheme"
+98                android:resource="@style/NormalTheme" />
+99
+100            <intent-filter>
+101                <action android:name="android.intent.action.MAIN" />
+102
+103                <category android:name="android.intent.category.LAUNCHER" />
+104            </intent-filter>
+105        </activity>
+106        <!--
+107             Don't delete the meta-data below.
+108             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+109        -->
+110        <meta-data
+111            android:name="flutterEmbedding"
+112            android:value="2" />
+113
+114        <service
+114-->[:geolocator_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-14:56
+115            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+115-->[:geolocator_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-77
+116            android:enabled="true"
+116-->[:geolocator_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-35
+117            android:exported="false"
+117-->[:geolocator_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-37
+118            android:foregroundServiceType="location" />
+118-->[:geolocator_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\geolocator_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-53
+119
+120        <provider
+120-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-16:20
+121            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+121-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-82
+122            android:authorities="com.example.flutter_application_1.flutter.image_provider"
+122-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-74
+123            android:exported="false"
+123-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-37
+124            android:grantUriPermissions="true" >
+124-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-47
+125            <meta-data
+125-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:75
+126                android:name="android.support.FILE_PROVIDER_PATHS"
+126-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-67
+127                android:resource="@xml/flutter_image_picker_file_paths" />
+127-->[:image_picker_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\image_picker_android\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-72
+128        </provider>
+129
+130        <activity
+130-->[:url_launcher_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+131            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+131-->[:url_launcher_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+132            android:exported="false"
+132-->[:url_launcher_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+133            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+133-->[:url_launcher_android] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+134
+135        <service
+135-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-15:56
+136            android:name="com.lyokone.location.FlutterLocationService"
+136-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-71
+137            android:enabled="true"
+137-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-35
+138            android:exported="false"
+138-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+139            android:foregroundServiceType="location" />
+139-->[:location] D:\ProgramFiles\Java2022\Terra-Sante-interim-master (2)\Terra-Sante-interim-master\build\location\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-53
+140
+141        <uses-library
+141-->[androidx.window:window:1.0.0-beta04] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\4ae8db8808990911ffb0cc1d905648d2\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+142            android:name="androidx.window.extensions"
+142-->[androidx.window:window:1.0.0-beta04] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\4ae8db8808990911ffb0cc1d905648d2\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0-beta04] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\4ae8db8808990911ffb0cc1d905648d2\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+144        <uses-library
+144-->[androidx.window:window:1.0.0-beta04] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\4ae8db8808990911ffb0cc1d905648d2\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+145            android:name="androidx.window.sidecar"
+145-->[androidx.window:window:1.0.0-beta04] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\4ae8db8808990911ffb0cc1d905648d2\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+146            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+146-->[androidx.window:window:1.0.0-beta04] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\4ae8db8808990911ffb0cc1d905648d2\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+147        <uses-library
+147-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:39:9-41:40
+148            android:name="org.apache.http.legacy"
+148-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:40:13-50
+149            android:required="false" />
+149-->[com.google.android.gms:play-services-maps:18.0.2] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\677c07c5383260cd69a34fcb2a7d9b4d\jetified-play-services-maps-18.0.2\AndroidManifest.xml:41:13-37
+150
+151        <activity
+151-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\f48f6fdf536b18508471aa7b4251aca2\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+152            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+152-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\f48f6fdf536b18508471aa7b4251aca2\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+153            android:exported="false"
+153-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\f48f6fdf536b18508471aa7b4251aca2\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+154            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+154-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\f48f6fdf536b18508471aa7b4251aca2\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+155
+156        <meta-data
+156-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\dce4d32ad0f1d3f0b2b133a3c589c497\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+157            android:name="com.google.android.gms.version"
+157-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\dce4d32ad0f1d3f0b2b133a3c589c497\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+158            android:value="@integer/google_play_services_version" />
+158-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Alain\.gradle\caches\transforms-2\files-2.1\dce4d32ad0f1d3f0b2b133a3c589c497\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+159    </application>
+160
+161</manifest>

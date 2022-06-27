@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\ProgramFiles\\Java2022\\Terra-Sante-interim-master (2)\\Terra-Sante-interim-master\\build\\url_launcher_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Alain\\.gradle\\caches\\transforms-2\\files-2.1\\bf57ee6ef03cef43525091c12acf6534\\core-1.6.0\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\ProgramFiles\\Java2022\\Terra-Sante-interim-master (2)\\Terra-Sante-interim-master\\build\\url_launcher_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Alain\\.gradle\\caches\\transforms-2\\files-2.1\\bf57ee6ef03cef43525091c12acf6534\\core-1.6.0\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\ProgramFiles\\Java2022\\Terra-Sante-interim-master (2)\\Terra-Sante-interim-master\\build\\url_launcher_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Alain\\.gradle\\caches\\transforms-2\\files-2.1\\bf57ee6ef03cef43525091c12acf6534\\core-1.6.0\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\ProgramFiles\\Java2022\\Terra-Sante-interim-master (2)\\Terra-Sante-interim-master\\build\\url_launcher_android\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Alain\\.gradle\\caches\\transforms-2\\files-2.1\\bf57ee6ef03cef43525091c12acf6534\\core-1.6.0\\res\\layout-v21\\notification_action_tombstone.xml"
+    }
+]
