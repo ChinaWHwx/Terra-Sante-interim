@@ -71,19 +71,7 @@ dependencies:
   geolocator: ^8.2.1
   geocoding: ^2.0.4
   flutter_typeahead: ^4.0.0
-  settings_ui: ^2.0.2
-  dotted_border: ^2.0.0+2
-  iconsax: ^0.0.7
-  file_picker: ^4.6.1
-  simple_animations: ^4.1.0
-  flutter_native_splash: ^2.2.3+1
-
-flutter_native_splash:
-  android: true
-  ios: true
-  web: false
-  color: "#a8fcf4"
-  image: assets/images/Terra logo.png
+  fluttertoast: ^8.0.9
   
 
 dev_dependencies:

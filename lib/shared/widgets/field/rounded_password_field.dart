@@ -7,19 +7,22 @@ class RoundedPasswordField extends StatelessWidget {
   final ValueChanged<String> onChanged;
   final Rx<bool> isVisible;
   final Function toggleVisibility;
+  final TextEditingController? textEditingController;
 
-  const RoundedPasswordField({
-    Key? key,
-    required this.onChanged,
-    required this.isVisible,
-    required this.toggleVisibility,
-  }) : super(key: key);
+  const RoundedPasswordField(
+      {Key? key,
+      required this.onChanged,
+      required this.isVisible,
+      required this.toggleVisibility,
+      this.textEditingController})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFieldContainer(
       child: Obx(
         () => TextField(
+          controller: textEditingController,
           obscureText: isVisible.value,
           onChanged: onChanged,
           cursorColor: kPrimaryColor,
