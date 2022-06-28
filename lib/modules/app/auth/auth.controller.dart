@@ -24,7 +24,7 @@ class AuthController extends GetxController {
   }
 
   navigateTest() {
-    Get.toNamed(Routes.dutyRoute);
+    Get.toNamed(Routes.calendarRoute);
   }
 
   navigateToHomePage() {

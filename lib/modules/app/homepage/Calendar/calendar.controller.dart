@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/routes/app.pages.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 class CalendarController extends GetxController {
   var selectedDate = DateTime.now().obs;
   var selectedTime = TimeOfDay.now().obs;
+  var chosenDate0 = ''.obs;
+  var chosenTime0 = ''.obs;
+  var chosenDate1 = ''.obs;
+  var chosenTime1 = ''.obs;
+  var chosenDate2 = ''.obs;
+  var chosenTime2 = ''.obs;
+  var chosenDate3 = ''.obs;
+  var chosenTime3 = ''.obs;
 
   @override
   void onInit() {
@@ -37,6 +46,12 @@ class CalendarController extends GetxController {
     if (pickedDate != null && pickedDate != selectedDate.value) {
       selectedDate.value = pickedDate;
     }
+    final DateFormat formatter = DateFormat('yyyy-MM-dd');
+    chosenDate0(formatter.format(selectedDate.value));
+    chosenDate1(formatter.format(selectedDate.value));
+    chosenDate2(formatter.format(selectedDate.value));
+    chosenDate3(formatter.format(selectedDate.value));
+
     TimeOfDay? pickedTime = await showTimePicker(
         context: Get.context!,
         initialTime: selectedTime.value,
@@ -53,6 +68,18 @@ class CalendarController extends GetxController {
     if (pickedTime != null && pickedTime != selectedTime.value) {
       selectedTime.value = pickedTime;
     }
+    chosenTime0(selectedTime.value.hour.toString() +
+        'h' +
+        selectedTime.value.minute.toString());
+    chosenTime1(selectedTime.value.hour.toString() +
+        'h' +
+        selectedTime.value.minute.toString());
+    chosenTime2(selectedTime.value.hour.toString() +
+        'h' +
+        selectedTime.value.minute.toString());
+    chosenTime3(selectedTime.value.hour.toString() +
+        'h' +
+        selectedTime.value.minute.toString());
   }
 
   navigateToHomePage() {
@@ -61,7 +88,7 @@ class CalendarController extends GetxController {
 
   bool disableDate(DateTime day) {
     if ((day.isAfter(DateTime.now().subtract(const Duration(days: 1))) &&
-        day.isBefore(DateTime.now().add(const Duration(days: 5))))) {
+        day.isBefore(DateTime.now().add(const Duration(days: 7))))) {
       return true;
     } else {
       return false;
