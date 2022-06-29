@@ -4,7 +4,7 @@ import 'package:flutter_application_1/routes/app.pages.dart';
 import 'package:get/get.dart';
 
 class NavigationDrawer extends StatelessWidget {
-  NavigationDrawer({Key? key}) : super(key: key);
+  const NavigationDrawer({Key? key}) : super(key: key);
 
   //var authController = Get.find<AuthController>();
 

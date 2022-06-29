@@ -6,14 +6,9 @@ import 'package:intl/intl.dart';
 class CalendarController extends GetxController {
   var selectedDate = DateTime.now().obs;
   var selectedTime = TimeOfDay.now().obs;
-  var chosenDate0 = ''.obs;
-  var chosenTime0 = ''.obs;
-  var chosenDate1 = ''.obs;
-  var chosenTime1 = ''.obs;
-  var chosenDate2 = ''.obs;
-  var chosenTime2 = ''.obs;
-  var chosenDate3 = ''.obs;
-  var chosenTime3 = ''.obs;
+  var chosenDate = ''.obs;
+  var chosenTime = ''.obs;
+  
 
   @override
   void onInit() {
@@ -32,7 +27,7 @@ class CalendarController extends GetxController {
     DateTime? pickedDate = await showDatePicker(
         context: Get.context!,
         initialDate: selectedDate.value,
-        firstDate: DateTime(2020),
+        firstDate: DateTime(2022),
         lastDate: DateTime(2050),
         //initialEntryMode: DatePickerEntryMode.input,
         //initialDatePickerMode: DatePickerMode.year,
@@ -47,11 +42,7 @@ class CalendarController extends GetxController {
       selectedDate.value = pickedDate;
     }
     final DateFormat formatter = DateFormat('yyyy-MM-dd');
-    chosenDate0(formatter.format(selectedDate.value));
-    chosenDate1(formatter.format(selectedDate.value));
-    chosenDate2(formatter.format(selectedDate.value));
-    chosenDate3(formatter.format(selectedDate.value));
-
+    chosenDate(formatter.format(selectedDate.value));
     TimeOfDay? pickedTime = await showTimePicker(
         context: Get.context!,
         initialTime: selectedTime.value,
@@ -60,24 +51,15 @@ class CalendarController extends GetxController {
         },
         initialEntryMode: TimePickerEntryMode.input,
         helpText: 'select Depature Time',
-        cancelText: 'close',
-        confirmText: 'Confirm',
+        cancelText: 'Fermer',
+        confirmText: 'Valider',
         errorInvalidText: 'Provide valid time',
         hourLabelText: 'Select Hour',
         minuteLabelText: 'Select Minute');
     if (pickedTime != null && pickedTime != selectedTime.value) {
       selectedTime.value = pickedTime;
     }
-    chosenTime0(selectedTime.value.hour.toString() +
-        'h' +
-        selectedTime.value.minute.toString());
-    chosenTime1(selectedTime.value.hour.toString() +
-        'h' +
-        selectedTime.value.minute.toString());
-    chosenTime2(selectedTime.value.hour.toString() +
-        'h' +
-        selectedTime.value.minute.toString());
-    chosenTime3(selectedTime.value.hour.toString() +
+    chosenTime(selectedTime.value.hour.toString() +
         'h' +
         selectedTime.value.minute.toString());
   }
