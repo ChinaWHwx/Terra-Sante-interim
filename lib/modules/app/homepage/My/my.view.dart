@@ -41,7 +41,7 @@ class MyView extends GetView<MyController> {
                           Text("Mon profil"),
                         ],
                       ),
-                      onPressed: () => controller.navigateToProfile(),
+                      onPressed: () => controller.navigateToExperience(),
                     ),
                     TextButton(
                       child: Row(

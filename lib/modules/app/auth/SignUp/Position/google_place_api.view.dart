@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Position/google_place_api.controller.dart';
-import 'package:flutter_application_1/shared/widgets/button/rounded_button.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:get/get.dart';
 
@@ -41,11 +40,7 @@ class GooglePlaceApiView extends GetView<GooglePlaceApiController> {
                         title:
                             Text(controller.placesList[index]['description']),
                       );
-                    }))),
-            RoundedButton(
-              text: "rengistrer",
-              onTap: () => controller.navigateToInfos(),
-            ),
+                    })))
           ],
         ),
       ),

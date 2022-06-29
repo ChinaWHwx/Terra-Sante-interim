@@ -32,10 +32,6 @@ class InfoController extends GetxController {
     Get.toNamed(Routes.homepage);
   }
 
-  void navigateToPassword() {
-    Get.toNamed(Routes.passwordRoute);
-  }
-
   validateForm() {
     if (prenomEditingController.text.isEmpty ||
         nomEditingController.text.isEmpty) {
@@ -43,7 +39,7 @@ class InfoController extends GetxController {
     } else if (isChecked.value == false) {
       errorMessage.value = "Il faut bien lire et valider";
     } else {
-      navigateToPassword();
+      navigateToHomePage();
     }
   }
 }
