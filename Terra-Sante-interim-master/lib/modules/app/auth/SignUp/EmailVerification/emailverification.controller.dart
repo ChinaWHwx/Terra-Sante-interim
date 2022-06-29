@@ -14,7 +14,7 @@ class EmailVerificationController extends GetxController {
     Get.toNamed(Routes.emailRoute);
   }
 
-  navigateToInfos() {
-    Get.toNamed(Routes.infoRoute);
+  navigateToPassword() {
+    Get.toNamed(Routes.passwordRoute);
   }
 }
