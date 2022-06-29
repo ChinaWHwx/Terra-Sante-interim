@@ -18,7 +18,7 @@ class ResetPasswordView extends GetView<ResetPasswordController> {
               child: Column(children: <Widget>[
         SizedBox(height: size.height * 0.05),
         const Text(
-          "Mettre votre mot de passe:",
+          "Mettre votre mot de passe svp:",
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),
         ),
         SizedBox(height: size.height * 0.05),
