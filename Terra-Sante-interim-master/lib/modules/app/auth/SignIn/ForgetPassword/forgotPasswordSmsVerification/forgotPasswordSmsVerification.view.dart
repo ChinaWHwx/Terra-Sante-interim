@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/modules/app/auth/SignUp/EmailVerification/emailverification.controller.dart';
+import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forgotPasswordSmsVerification/forgotPasswordSmsVerification.controller.dart';
 import 'package:flutter_application_1/shared/widgets/button/rounded_button.dart';
 import 'package:flutter_application_1/shared/widgets/field/rounded_input_field.dart';
 import 'package:get/get.dart';
 
-class EmailVerificationView extends GetView<EmailVerificationController> {
-  const EmailVerificationView({Key? key}) : super(key: key);
+class ForgotPasswordSmsVerificationView
+    extends GetView<ForgotPasswordSmsVerificationController> {
+  const ForgotPasswordSmsVerificationView({Key? key}) : super(key: key);
   get top => null;
 
   @override
@@ -24,17 +25,24 @@ class EmailVerificationView extends GetView<EmailVerificationController> {
         ),
         SizedBox(height: size.height * 0.05),
         RoundedInputField(
-          icon: Icons.code,
-          hintText: "Code de Mail*",
+          textEditingController: controller.textEditingController,
+          icon: Icons.password,
+          hintText: "Code SMS*",
           onChanged: (value) {},
         ),
+        Obx(() => controller.errorMessage.isNotEmpty
+            ? Text(
+                controller.errorMessage.value,
+                style: const TextStyle(color: Colors.red),
+              )
+            : const SizedBox()),
         RoundedButton(
-          text: controller.saisir,
-          onTap: () => controller.navigateToPassword(),
+          text: "Vérifier",
+          onTap: () => controller.validateForm(),
         ),
         RoundedButton(
-          text: controller.rentrer,
-          onTap: () => controller.navigateToEmail(),
+          text: "Précédent",
+          onTap: () => controller.navigateToForget(),
         ),
       ]))),
     )));

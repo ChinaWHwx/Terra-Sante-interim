@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/routes/app.pages.dart';
 import 'package:get/get.dart';
 
-class PasswordController extends GetxController {
+class ResetPasswordController extends GetxController {
   Rx<String> errorMessage = ''.obs;
 
   final TextEditingController passwordController = TextEditingController();
@@ -40,7 +40,7 @@ class PasswordController extends GetxController {
     errorMessage.value = isPasswordValid(passwordController.text);
 
     if (errorMessage.value == '') {
-      navigateToHomePage();
+      navigateToSignIn();
     }
   }
 }
