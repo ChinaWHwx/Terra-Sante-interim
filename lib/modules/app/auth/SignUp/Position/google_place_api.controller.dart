@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routes/app.pages.dart';
 import 'package:get/get.dart';
 import 'package:uuid/uuid.dart';
 import 'package:http/http.dart' as http;
@@ -29,6 +30,10 @@ class GooglePlaceApiController extends GetxController
     if (controller.text.isNotEmpty) {
       getSuggesion(controller.text);
     }
+  }
+
+  navigateToInfos() {
+    Get.toNamed(Routes.infoRoute);
   }
 
   void getSuggesion(String input) async {
