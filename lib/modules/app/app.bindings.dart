@@ -4,6 +4,7 @@ import 'package:flutter_application_1/modules/app/auth/SignUp/Email/email.contro
 import 'package:flutter_application_1/modules/app/auth/SignUp/EmailVerification/emailverification.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Infos/info.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Password/password.controller.dart';
+import 'package:flutter_application_1/modules/app/auth/SignUp/Position/google_place_api.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/SmsVerification/smsverification.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Telephone/telephone.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/Splash/splach.controller.dart';
@@ -25,7 +26,9 @@ import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.co
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.controller.dart';
 import 'package:flutter_application_1/repositories/login.repository.dart';
+import 'package:flutter_application_1/repositories/signUp.repository.dart';
 import 'package:flutter_application_1/services/login.service.dart';
+import 'package:flutter_application_1/services/signUp.service.dart';
 import 'package:get/get.dart';
 
 class AppBindings extends Bindings {
@@ -57,13 +60,17 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => ContactController(), fenix: true);
     Get.lazyPut(() => MapController(), fenix: true);
     //Get.lazyPut(() => GoogleMapPositionController(), fenix: true);
+    Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
+
     Get.lazyPut(() => RecommendController(), fenix: true);
     Get.lazyPut(() => DutyController(), fenix: true);
 
     //Services
     Get.lazyPut(() => LoginService(), fenix: true);
+    Get.lazyPut(() => SignUpService(), fenix: true);
 
     //Repositories
     Get.lazyPut(() => LoginRepository(), fenix: true);
+    Get.lazyPut(() => SignUpRepository(), fenix: true);
   }
 }

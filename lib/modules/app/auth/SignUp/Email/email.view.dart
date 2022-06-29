@@ -26,7 +26,7 @@ class EmailView extends GetView<EmailController> {
         RoundedInputField(
           textEditingController: controller.textEditingController,
           icon: Icons.mail,
-          hintText: "Adress de mail*",
+          hintText: "Adresse mail*",
           onChanged: (value) {},
         ),
         Obx(() => controller.errorMessage.isNotEmpty

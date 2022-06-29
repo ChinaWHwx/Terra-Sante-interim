@@ -17,26 +17,25 @@ class AuthView extends GetView<AuthController> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
               SizedBox(height: size.height * 0.05),
-              Text(
-                controller.welcome,
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 24.0),
+              const Text(
+                'Bienvenue à Terra Santé',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),
               ),
               Image.asset(
                 "assets/images/logo.png",
                 height: size.height * 0.35,
               ),
               RoundedButton(
-                  text: controller.candidate,
-                  //onTap: () => controller.navigateToHomePage()),
-                  onTap: () => controller.navigateTest()),
+                  text: 'Je voudrais travailler',
+                  onTap: () => controller.navigateToCandidate()),
+              //onTap: () => controller.navigateTest()),
               RoundedButton(
-                  text: controller.recruiter,
+                  text: 'Je souhaite recruter',
                   onTap: () => controller.navigateToRecruiter()),
               TextButton(
                   onPressed: () => controller.navigateToSignIn(),
-                  child: Text(controller.check,
-                      style: const TextStyle(
+                  child: const Text('Vous avez déjà un compte? Connectez-vous',
+                      style: TextStyle(
                         fontWeight: FontWeight.normal,
                         fontSize: 16.0,
                         color: Colors.black,
