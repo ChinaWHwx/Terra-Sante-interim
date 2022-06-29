@@ -13,7 +13,7 @@ class PasswordController extends GetxController {
   }
 
   navigateToHomePage() {
-    Get.toNamed(Routes.infoRoute);
+    Get.toNamed(Routes.homepageRoute);
   }
 
   String isPasswordValid(String password) {
@@ -40,7 +40,7 @@ class PasswordController extends GetxController {
     errorMessage.value = isPasswordValid(passwordController.text);
 
     if (errorMessage.value == '') {
-      navigateToInfos();
+      navigateToHomePage();
     }
   }
 }
