@@ -44,7 +44,7 @@ class Routes {
   static const emailVerificationRoute =
       auth + telephone + smsVerification + email + emailVerification;
   static const emailRoute = auth + telephone + smsVerification + email;
-  static const positionRoute = auth + position;
+  static const positionRoute = position;
   static const homepageRoute = homepage;
   static const welcomeRoute = welcome;
   static const passwordRoute = password;

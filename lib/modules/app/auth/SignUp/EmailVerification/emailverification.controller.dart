@@ -17,4 +17,8 @@ class EmailVerificationController extends GetxController {
   navigateToInfos() {
     Get.toNamed(Routes.infoRoute);
   }
+
+  navigateToPosition() {
+    Get.toNamed(Routes.googleplaceapiRoute);
+  }
 }

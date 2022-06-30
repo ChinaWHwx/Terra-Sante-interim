@@ -16,6 +16,9 @@ class RecommendView extends GetView<RecommendController> {
         child: Center(
           child: Column(
             children: <Widget>[
+              const SizedBox(
+                height: 100,
+              ),
               QrImage(
                 data: "Partagez avec vos amis",
                 version: QrVersions.auto,
