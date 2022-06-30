@@ -11,33 +11,30 @@ import 'package:flutter_application_1/modules/app/auth/Splash/splach.controller.
 import 'package:flutter_application_1/modules/app/auth/auth.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Candidate/candidate.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Recruiter/recruiter.controller.dart';
-import 'package:flutter_application_1/modules/app/error/Network/network_error.controller.dart';
-import 'package:flutter_application_1/modules/app/error/NothingFound/nothing_found.controller.dart';
 import 'package:flutter_application_1/modules/app/error/SignIn/signin_error.controller.dart';
 import 'package:flutter_application_1/modules/app/error/SmsVerification/sms_error.controller.dart';
-import 'package:flutter_application_1/modules/app/error/access/Camera/camera_access.controller.dart';
-import 'package:flutter_application_1/modules/app/error/access/File/file_access.controller.dart';
-import 'package:flutter_application_1/modules/app/error/access/GPS/gps_access.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Recommend/recommend.controller.dart';
-import 'package:flutter_application_1/modules/app/homepage/Drawer/Settings/setting.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Duty/duty.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/ability/ability.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/document/document.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/experience/experience.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/my.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.controller.dart';
-import 'package:flutter_application_1/modules/app/homepage/Search/search.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.controller.dart';
-import 'package:flutter_application_1/modules/app/timeout/SignIn/signin_timeout.controller.dart';
+import 'package:flutter_application_1/repositories/login.repository.dart';
+import 'package:flutter_application_1/repositories/signUp.repository.dart';
+import 'package:flutter_application_1/services/login.service.dart';
+import 'package:flutter_application_1/services/signUp.service.dart';
 import 'package:get/get.dart';
 
 class AppBindings extends Bindings {
   @override
   void dependencies() {
+    //Controllers
     Get.lazyPut(() => AuthController(), fenix: true);
     Get.lazyPut(() => SignInController(), fenix: true);
     Get.lazyPut(() => TelephoneController(), fenix: true);
@@ -63,16 +60,17 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => ContactController(), fenix: true);
     Get.lazyPut(() => MapController(), fenix: true);
     //Get.lazyPut(() => GoogleMapPositionController(), fenix: true);
+    Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
+
     Get.lazyPut(() => RecommendController(), fenix: true);
     Get.lazyPut(() => DutyController(), fenix: true);
-    Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
-    Get.lazyPut(() => SettingController(), fenix: true);
-    Get.lazyPut(() => SearchController(), fenix: true);
-    Get.lazyPut(() => NothingFoundController(), fenix: true);
-    Get.lazyPut(() => NetWorkErrorController(), fenix: true);
-    Get.lazyPut(() => GpsAccessController(), fenix: true);
-    Get.lazyPut(() => CameraAccessController(), fenix: true);
-    Get.lazyPut(() => FileAccessController(), fenix: true);
-    Get.lazyPut(() => SignInTimeOutController(), fenix: true);
+
+    //Services
+    Get.lazyPut(() => LoginService(), fenix: true);
+    Get.lazyPut(() => SignUpService(), fenix: true);
+
+    //Repositories
+    Get.lazyPut(() => LoginRepository(), fenix: true);
+    Get.lazyPut(() => SignUpRepository(), fenix: true);
   }
 }

@@ -26,7 +26,7 @@ class SmsVerificationView extends GetView<SmsVerificationController> {
         RoundedInputField(
           textEditingController: controller.textEditingController,
           icon: Icons.password,
-          hintText: "Code SMS*",
+          hintText: "Code SMS",
           onChanged: (value) {},
         ),
         Obx(() => controller.errorMessage.isNotEmpty

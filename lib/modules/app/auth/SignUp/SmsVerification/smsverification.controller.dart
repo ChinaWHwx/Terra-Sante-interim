@@ -24,7 +24,7 @@ class SmsVerificationController extends GetxController {
     if (textEditingController.text.isEmpty) {
       errorMessage.value = "code vide";
     } else if (!GetUtils.isNumericOnly(textEditingController.text)) {
-      errorMessage.value = 'Ce n\'est pas les chiffres!';
+      errorMessage.value = 'Votre code se compose de chiffres seulement';
     } else if (!GetUtils.isLengthEqualTo(textEditingController.text, 4)) {
       errorMessage.value = 'Quatre chiffres requis';
     } else {

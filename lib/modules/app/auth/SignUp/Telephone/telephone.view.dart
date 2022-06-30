@@ -23,7 +23,7 @@ class TelephoneView extends GetView<TelephoneController> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const Text(
-                  "Pour les étapes suivantes...",
+                  "Numéro de téléphone",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0),
                 ),
                 SizedBox(height: size.height * 0.03),
@@ -31,15 +31,12 @@ class TelephoneView extends GetView<TelephoneController> {
                   invalidNumberMessage: "",
                   controller: controller.textEditingController,
                   decoration: const InputDecoration(
-                    labelText: 'Phone Number',
+                    labelText: 'Numéro sans le 0 ou l\'indicatif',
                     border: OutlineInputBorder(
                       borderSide: BorderSide(),
                     ),
                   ),
                   initialCountryCode: 'FR',
-                  onChanged: (phone) {
-                    print(phone.completeNumber);
-                  },
                 ),
                 Obx(
                   (() => controller.errorMessage.isNotEmpty
@@ -49,13 +46,11 @@ class TelephoneView extends GetView<TelephoneController> {
                         )
                       : SizedBox(height: size.height * 0.03)),
                 ),
+                SizedBox(height: size.height * 0.03),
                 RoundedButton(
-                  text: controller.envoyer,
+                  text: 'Suivant',
                   onTap: () => controller.validateForm(),
                 ),
-                RoundedButton(
-                    text: controller.rentrer,
-                    onTap: () => controller.navigateToStatus()),
               ],
             ),
           ),

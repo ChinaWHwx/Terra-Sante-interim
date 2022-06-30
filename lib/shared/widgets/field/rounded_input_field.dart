@@ -27,7 +27,7 @@ class RoundedInputField extends StatelessWidget {
         cursorColor: kPrimaryColor,
         validator: (text) => text != null && GetUtils.isEmail(text)
             ? null
-            : 'C\'est pas une addresse correct',
+            : 'C\'est pas une addresse correcte',
         decoration: InputDecoration(
           icon: Icon(
             icon,

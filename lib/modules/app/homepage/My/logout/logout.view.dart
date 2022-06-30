@@ -14,7 +14,7 @@ class LogoutView extends GetView<LogoutController> {
             child: Center(
                 child: SingleChildScrollView(
                     child: Column(children: <Widget>[
-      RaisedButton(
+      ElevatedButton(
         child: const Text('Logout'),
         onPressed: () {
           showDialog(

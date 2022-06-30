@@ -62,9 +62,11 @@ class FavoriteView extends GetView<FavotiteController> {
                 ), //SizedBox
                 SizedBox(
                   width: 80,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () => null,
-                    color: Colors.green,
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.green),
+                    ),
                     child: Padding(
                       padding: const EdgeInsets.all(4.0),
                       child: Row(

@@ -72,12 +72,17 @@ class ProfileView extends GetView<ProfileController> {
                 child: SizedBox(
                   height: 46,
                   width: 46,
-                  child: FlatButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50),
-                      side: const BorderSide(color: Colors.white),
+                  child: TextButton(
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                          side: const BorderSide(color: Colors.white),
+                        ),
+                      ),
+                      backgroundColor:
+                          MaterialStateProperty.all(Colors.grey[200]),
                     ),
-                    color: Colors.grey[200],
                     onPressed: () {
                       Get.bottomSheet(
                         Container(

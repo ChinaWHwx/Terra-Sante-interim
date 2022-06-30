@@ -11,17 +11,10 @@ import 'package:flutter_application_1/modules/app/auth/SignUp/Telephone/telephon
 import 'package:flutter_application_1/modules/app/auth/Splash/splash.view.dart';
 import 'package:flutter_application_1/modules/app/auth/auth.view.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Status/Recruiter/recruiter.view.dart';
-import 'package:flutter_application_1/modules/app/error/Network/network_error.view.dart';
-import 'package:flutter_application_1/modules/app/error/NothingFound/nothing_found.view.dart';
-import 'package:flutter_application_1/modules/app/error/SignIn/signin_error.view.dart';
-import 'package:flutter_application_1/modules/app/error/access/Camera/camera_access.view.dart';
-import 'package:flutter_application_1/modules/app/error/access/File/file_access.view.dart';
-import 'package:flutter_application_1/modules/app/error/access/GPS/gps_access.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Calendar/calendar.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Contact/contact.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/GoogleMap/google_map.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Drawer/Recommend/recommend.view.dart';
-import 'package:flutter_application_1/modules/app/homepage/Drawer/Settings/setting.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Duty/duty.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/document/document.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/experience/experience.view.dart';
@@ -29,10 +22,8 @@ import 'package:flutter_application_1/modules/app/homepage/My/logout/logout.view
 import 'package:flutter_application_1/modules/app/homepage/My/my.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/ability/ability.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.view.dart';
-import 'package:flutter_application_1/modules/app/homepage/Search/search.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.view.dart';
-import 'package:flutter_application_1/modules/app/timeout/SignIn/signin_timeout.view.dart';
 import 'package:get/get.dart';
 
 part 'app.routes.dart';
@@ -41,12 +32,6 @@ class AppPages {
   AppPages._();
 
   static final routes = [
-    GetPage(name: Routes.splash, page: () => const SplashView(), children: [
-      GetPage(
-        name: Routes.auth,
-        page: () => const AuthView(),
-      )
-    ]),
     GetPage(
       name: Routes.auth,
       page: () => const AuthView(),
@@ -116,14 +101,5 @@ class AppPages {
     GetPage(name: Routes.duty, page: () => const DutyView()),
     GetPage(
         name: Routes.googlePlaceApi, page: () => const GooglePlaceApiView()),
-    GetPage(name: Routes.setting, page: () => const SettingView()),
-    GetPage(name: Routes.search, page: () => const SearchView()),
-    GetPage(name: Routes.nothingFound, page: () => const NothingFindView()),
-    GetPage(name: Routes.signInError, page: () => const SignInErrorView()),
-    GetPage(name: Routes.networkError, page: () => const NetWorkErrorView()),
-    GetPage(name: Routes.gpsAccess, page: () => const GpsAccessView()),
-    GetPage(name: Routes.cameraAccess, page: () => const CameraAccessView()),
-    GetPage(name: Routes.fileAccess, page: () => const FileAccessView()),
-    GetPage(name: Routes.signInTimeOut, page: () => const SigiInTimeOutView()),
   ];
 }
