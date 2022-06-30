@@ -1,4 +1,6 @@
 import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forget.controller.dart';
+import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forgotPasswordSmsVerification/forgotPasswordSmsVerification.controller.dart';
+import 'package:flutter_application_1/modules/app/auth/SignIn/ResetPassword/resetPassword.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignIn/signin.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Email/email.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/EmailVerification/emailverification.controller.dart';
@@ -25,6 +27,7 @@ import 'package:flutter_application_1/modules/app/homepage/My/my.controller.dart
 import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.controller.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.controller.dart';
+import 'package:flutter_application_1/modules/app/timeout/SignIn/signin_timeout.controller.dart';
 import 'package:flutter_application_1/repositories/login.repository.dart';
 import 'package:flutter_application_1/repositories/signUp.repository.dart';
 import 'package:flutter_application_1/services/login.service.dart';
@@ -72,5 +75,10 @@ class AppBindings extends Bindings {
     //Repositories
     Get.lazyPut(() => LoginRepository(), fenix: true);
     Get.lazyPut(() => SignUpRepository(), fenix: true);
+
+    Get.lazyPut(() => SignInTimeOutController(), fenix: true);
+    Get.lazyPut(() => ResetPasswordController(), fenix: true);
+    Get.lazyPut(() => ForgetPasswordController(), fenix: true);
+    Get.lazyPut(() => ForgotPasswordSmsVerificationController(), fenix: true);
   }
 }

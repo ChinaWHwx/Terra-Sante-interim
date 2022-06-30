@@ -79,6 +79,7 @@ dependencies:
   flutter_native_splash: ^2.2.3+1
   fluttertoast: ^8.0.9
   syncfusion_flutter_calendar: ^20.1.61
+  fsuper: ^2.1.1
 
 flutter_native_splash:
   android: true
