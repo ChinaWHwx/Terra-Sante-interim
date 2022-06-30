@@ -1,6 +1,4 @@
 import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forget.view.dart';
-import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forgotPasswordSmsVerification/forgotPasswordSmsVerification.view.dart';
-import 'package:flutter_application_1/modules/app/auth/SignIn/ResetPassword/resetPassword.view.dart';
 import 'package:flutter_application_1/modules/app/auth/SignIn/signin.view.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Email/email.view.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/EmailVerification/emailverification.view.dart';
@@ -34,7 +32,6 @@ import 'package:flutter_application_1/modules/app/homepage/My/profile/profile.vi
 import 'package:flutter_application_1/modules/app/homepage/Search/search.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/Welcome/welcome.view.dart';
 import 'package:flutter_application_1/modules/app/homepage/homepage.view.dart';
-import 'package:flutter_application_1/modules/app/timeout/EmailVerification/emailverification_timeout.view.dart';
 import 'package:flutter_application_1/modules/app/timeout/SignIn/signin_timeout.view.dart';
 import 'package:get/get.dart';
 
@@ -59,13 +56,9 @@ class AppPages {
           page: () => const SignInView(),
           children: [
             GetPage(
-                name: Routes.forgetPassword,
-                page: () => const ForgetPasswordView(),
-                children: [
-                  GetPage(
-                      name: Routes.forgotPasswordSmsVerificationRoute,
-                      page: () => const ForgotPasswordSmsVerificationView())
-                ])
+              name: Routes.forgetPassword,
+              page: () => const ForgetPasswordView(),
+            )
           ],
         ),
         GetPage(
@@ -104,7 +97,7 @@ class AppPages {
     GetPage(name: Routes.password, page: () => const PasswordView()),
     GetPage(name: Routes.homepage, page: () => const HomepageView()),
     GetPage(name: Routes.welcome, page: () => const WelcomeView()),
-    GetPage(name: Routes.calendar, page: () => const CalendarView()),
+    GetPage(name: Routes.calendar, page: () => CalendarView()),
     GetPage(name: Routes.menu, page: () => const MyView()),
     GetPage(name: Routes.document, page: () => const DocumentView()),
     GetPage(name: Routes.experience, page: () => const ExperienceView()),
@@ -132,12 +125,5 @@ class AppPages {
     GetPage(name: Routes.cameraAccess, page: () => const CameraAccessView()),
     GetPage(name: Routes.fileAccess, page: () => const FileAccessView()),
     GetPage(name: Routes.signInTimeOut, page: () => const SigiInTimeOutView()),
-    GetPage(
-        name: Routes.emailVerificationTimeOut,
-        page: () => const EmailVerificationTimeOutView()),
-    GetPage(name: Routes.resetPassword, page: () => const ResetPasswordView()),
-    GetPage(
-        name: Routes.forgotPasswordSmsVerification,
-        page: () => const ForgotPasswordSmsVerificationView()),
   ];
 }

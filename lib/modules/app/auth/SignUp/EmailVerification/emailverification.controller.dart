@@ -14,7 +14,11 @@ class EmailVerificationController extends GetxController {
     Get.toNamed(Routes.emailRoute);
   }
 
-  navigateToPassword() {
-    Get.toNamed(Routes.passwordRoute);
+  navigateToInfos() {
+    Get.toNamed(Routes.infoRoute);
+  }
+
+  navigateToPosition() {
+    Get.toNamed(Routes.googleplaceapiRoute);
   }
 }

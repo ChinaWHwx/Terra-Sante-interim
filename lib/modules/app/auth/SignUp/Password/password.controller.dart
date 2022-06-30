@@ -8,12 +8,12 @@ class PasswordController extends GetxController {
   final TextEditingController passwordController = TextEditingController();
   final TextEditingController verificationController = TextEditingController();
 
-  navigateToSignIn() {
-    Get.toNamed(Routes.signInRoute);
+  navigateToInfos() {
+    Get.toNamed(Routes.infoRoute);
   }
 
   navigateToHomePage() {
-    Get.toNamed(Routes.infoRoute);
+    Get.toNamed(Routes.homepageRoute);
   }
 
   String isPasswordValid(String password) {

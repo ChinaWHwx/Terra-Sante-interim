@@ -8,6 +8,7 @@ import 'package:flutter_svg/svg.dart';
 
 class SignInView extends GetView<SignInController> {
   const SignInView({Key? key}) : super(key: key);
+  get top => null;
 
   @override
   Widget build(BuildContext context) {

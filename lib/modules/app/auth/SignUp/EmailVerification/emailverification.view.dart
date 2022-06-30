@@ -30,7 +30,7 @@ class EmailVerificationView extends GetView<EmailVerificationController> {
         ),
         RoundedButton(
           text: controller.saisir,
-          onTap: () => controller.navigateToPassword(),
+          onTap: () => controller.navigateToPosition(),
         ),
         RoundedButton(
           text: controller.rentrer,

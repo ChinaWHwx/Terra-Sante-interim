@@ -1,6 +1,4 @@
 import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forget.controller.dart';
-import 'package:flutter_application_1/modules/app/auth/SignIn/ForgetPassword/forgotPasswordSmsVerification/forgotPasswordSmsVerification.controller.dart';
-import 'package:flutter_application_1/modules/app/auth/SignIn/ResetPassword/resetPassword.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignIn/signin.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/Email/email.controller.dart';
 import 'package:flutter_application_1/modules/app/auth/SignUp/EmailVerification/emailverification.controller.dart';
@@ -64,7 +62,7 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => ProfileController(), fenix: true);
     Get.lazyPut(() => ContactController(), fenix: true);
     Get.lazyPut(() => MapController(), fenix: true);
-    // Get.lazyPut(() => GoogleMapPositionController(), fenix: true);
+    //Get.lazyPut(() => GoogleMapPositionController(), fenix: true);
     Get.lazyPut(() => RecommendController(), fenix: true);
     Get.lazyPut(() => DutyController(), fenix: true);
     Get.lazyPut(() => GooglePlaceApiController(), fenix: true);
@@ -76,8 +74,5 @@ class AppBindings extends Bindings {
     Get.lazyPut(() => CameraAccessController(), fenix: true);
     Get.lazyPut(() => FileAccessController(), fenix: true);
     Get.lazyPut(() => SignInTimeOutController(), fenix: true);
-    Get.lazyPut(() => ResetPasswordController(), fenix: true);
-    Get.lazyPut(() => ForgetPasswordController(), fenix: true);
-    Get.lazyPut(() => ForgotPasswordSmsVerificationController(), fenix: true);
   }
 }

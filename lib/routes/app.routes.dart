@@ -42,11 +42,6 @@ class Routes {
   static const cameraAccess = '/cameraAccess';
   static const fileAccess = '/fileAccess';
   static const signInTimeOut = '/signInTimeOut';
-  static const emailVerificationTimeOut = '/emailVerificationTimeOut';
-  static const resetPassword = '/resetPassword';
-  static const forgotPasswordSmsVerification = '/forgotPasswordSmsVerification';
-
-
 
   static const candidateRoute = auth + candidate;
   static const recruiterRoute = auth + recruiter;
@@ -58,7 +53,7 @@ class Routes {
   static const emailVerificationRoute =
       auth + telephone + smsVerification + email + emailVerification;
   static const emailRoute = auth + telephone + smsVerification + email;
-  static const positionRoute = auth + position;
+  static const positionRoute = position;
   static const homepageRoute = homepage;
   static const welcomeRoute = welcome;
   static const passwordRoute = password;
@@ -89,8 +84,4 @@ class Routes {
   static const cameraAccessRoute = cameraAccess;
   static const fileAccessRoute = fileAccess;
   static const sigiInTimeOutRoute = signInTimeOut;
-  static const emailVerificationTimeOutRoute = emailVerificationTimeOut;
-  static const resetPasswordRoute = resetPassword;
-  static const forgotPasswordSmsVerificationRoute =
-      forgotPasswordSmsVerification;
 }

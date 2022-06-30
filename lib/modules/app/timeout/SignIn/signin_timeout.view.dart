@@ -13,28 +13,12 @@ class SigiInTimeOutView extends GetView<SignInTimeOutController> {
         fit: StackFit.expand,
         children: [
           Image.asset(
-            "assets/images/clock.png",
-            fit: BoxFit.fitWidth,
+            "assets/images/16_Time Error.png",
+            fit: BoxFit.cover,
           ),
           Positioned(
-              bottom: MediaQuery.of(context).size.height * 0.225,
-              left: MediaQuery.of(context).size.width * 0.05,
-              // child: const Text(
-              //   "Oops!\nDélai de connexion,veuillez reconnecter!",
-              //   textAlign: TextAlign.center,
-              // ),
-              child: const Text(
-                "Oops!  \nDélai de connexion, veuillez reconnecter!",
-                style: TextStyle(
-                  fontWeight: FontWeight.normal,
-                  fontSize: 20.0,
-                  color: Colors.black,
-                ),
-                textAlign: TextAlign.center,
-              )),
-          Positioned(
-            bottom: MediaQuery.of(context).size.height * 0.08,
-            left: MediaQuery.of(context).size.width * 0.25,
+            bottom: MediaQuery.of(context).size.height * 0.14,
+            left: MediaQuery.of(context).size.width * 0.065,
             child: Container(
               decoration: BoxDecoration(
                 boxShadow: [
@@ -45,13 +29,18 @@ class SigiInTimeOutView extends GetView<SignInTimeOutController> {
                   ),
                 ],
               ),
-              child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      minimumSize: const Size(200, 50)),
-                  child: const Text("Réessayer"),
-                  onPressed: () => controller.navigateToSignInPage()),
+              child: FlatButton(
+                color: const Color(0xFF6371AA),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(50)),
+                onPressed: () {},
+                child: Text(
+                  "Retry".toUpperCase(),
+                  style: const TextStyle(color: Colors.white),
+                ),
+              ),
             ),
-          ),
+          )
         ],
       ),
     );
